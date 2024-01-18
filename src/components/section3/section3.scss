@@ -18,31 +18,35 @@
   &__hdl {
     width: px-to-rem(1140px);
     @include flex(center, flex-start, column);
-    @media screen and (max-width: px-to-rem(500px)) {
+    @media screen and (max-width: px-to-rem(570px)) {
       width: px-to-rem(200px);
     }
 
-    @media screen and (min-width: px-to-rem(501px)) and (max-width: px-to-rem(1000px)) {
+    @media screen and (min-width: px-to-rem(571px)) and (max-width: px-to-rem(1000px)) {
       width: px-to-rem(320px);
     }
     @media screen and (min-width: px-to-rem(1001px)) and (max-width: px-to-rem(1250px)) {
       width: px-to-rem(900px);
     }
 
-    &__text{
+    &__text {
       font-size: px-to-rem(30px);
       color: white;
       font-family: 'Open Sans', sans-serif;
       font-weight: 400;
       margin-top: px-to-rem(70px);
-
-
-      @media screen and (max-width: px-to-rem(1000px)) {
-        margin-top: px-to-rem(80px);
-        font-size: px-to-rem(25px);
+      @media screen and (max-width: px-to-rem(570px)) {
+        margin-top: px-to-rem(60px);
+        font-size: px-to-rem(17px);
       }
+
+      @media screen and (min-width: px-to-rem(571px)) and (max-width: px-to-rem(1000px)) {
+        margin-top: px-to-rem(60px);
+        font-size: px-to-rem(23px);
+      }
+
       @media screen and (min-width: px-to-rem(1001px)) and (max-width: px-to-rem(1250px)) {
-        margin-top: px-to-rem(80px);
+        margin-top: px-to-rem(60px);
         font-size: px-to-rem(25px);
       }
     }
@@ -54,6 +58,19 @@
   height: px-to-rem(2px);
   background-color: #74A5B4;
   margin-top: px-to-rem(-20px);
+  @media screen and (max-width: px-to-rem(570px)) {
+    width: px-to-rem(45px);
+    margin-top: px-to-rem(-10px);
+  }
+
+  @media screen and (min-width: px-to-rem(571px)) and (max-width: px-to-rem(1000px)) {
+    width: px-to-rem(60px);
+    margin-top: px-to-rem(-10px);
+  }
+  @media screen and (min-width: px-to-rem(1001px)) and (max-width: px-to-rem(1250px)) {
+    width: px-to-rem(65px);
+    margin-top: px-to-rem(-15px);
+  }
 }
 
 .card__projects{
@@ -113,7 +130,8 @@
     border-radius: px-to-rem(35px);
     margin-top: px-to-rem(30px);
 
-  @media screen and (min-width: px-to-rem(501px)) and (max-width: px-to-rem(1000px)) {
+  @media screen and (min-width: px-to-rem(571px)) and (max-width: px-to-rem(1000px)) {
+    margin-top: px-to-rem(50px);
     &:before,
     &:after,
     .content {
@@ -128,7 +146,7 @@
     }
   }
 
-  @media screen and (max-width: px-to-rem(500px)) {
+  @media screen and (max-width: px-to-rem(570px)) {
     height: px-to-rem(200px);
     width: px-to-rem(200px);
     &:before,
@@ -148,6 +166,7 @@
   @media screen and (min-width: px-to-rem(1001px)) and (max-width: px-to-rem(1250px)) {
     height: px-to-rem(250px);
     width: px-to-rem(250px);
+    margin-top: px-to-rem(20px);
   }
 
   &:before {
@@ -230,10 +249,14 @@
   line-height: 1.2;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  @media screen and (max-width: px-to-rem(520px)) {
-
+  @media screen and (max-width: px-to-rem(570px)) {
+    font-size: px-to-rem(15px);
   }
-  @media screen and (min-width: px-to-rem(520px)) and (max-width: px-to-rem(1250px)) {
+
+  @media screen and (min-width: px-to-rem(571px)) and (max-width: px-to-rem(999px)) {
+    font-size: px-to-rem(22px);
+  }
+  @media screen and (min-width: px-to-rem(1001px)) and (max-width: px-to-rem(1250px)) {
     font-size: px-to-rem(19px);
   }
 }
@@ -243,10 +266,14 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.35;
-  @media screen and (max-width: px-to-rem(520px)) {
-
+  @media screen and (max-width: px-to-rem(570px)) {
+    font-size: px-to-rem(10px);
   }
-  @media screen and (min-width: px-to-rem(520px)) and (max-width: px-to-rem(1250px)) {
+
+  @media screen and (min-width: px-to-rem(571px)) and (max-width: px-to-rem(999px)) {
+    font-size: px-to-rem(17px);
+  }
+  @media screen and (min-width: px-to-rem(1001px)) and (max-width: px-to-rem(1250px)) {
     font-size: px-to-rem(14px);
   }
 }
@@ -264,10 +291,18 @@
   background-color: #74A5B4;
   border: none;
 
-  @media screen and (max-width: px-to-rem(520px)) {
-
+  @media screen and (max-width: px-to-rem(570px)) {
+    margin-top: px-to-rem(-5px);
+    padding: px-to-rem(5px) px-to-rem(15px);
+    font-size: px-to-rem(8px);
   }
-  @media screen and (min-width: px-to-rem(520px)) and (max-width: px-to-rem(1250px)) {
+
+  @media screen and (min-width: px-to-rem(571px)) and (max-width: px-to-rem(999px)) {
+    margin-top: px-to-rem(-5px);
+    padding: px-to-rem(10px) px-to-rem(30px);
+    font-size: px-to-rem(15px);
+  }
+  @media screen and (min-width: px-to-rem(1001px)) and (max-width: px-to-rem(1250px)) {
     margin-top: px-to-rem(-5px);
     padding: px-to-rem(8px) px-to-rem(20px);
   }
@@ -341,9 +376,15 @@
   font-family: 'Open Sans',sans-serif;
   font-weight: 700;
 
-  @media screen and (max-width: px-to-rem(1000px)) {
+  @media screen and (max-width: px-to-rem(570px)) {
     padding: px-to-rem(15px) px-to-rem(40px) px-to-rem(15px) px-to-rem(40px);
-    margin-top: px-to-rem(70px);
+    margin-top: px-to-rem(50px);
+    margin-bottom: px-to-rem(50px);
+    font-size: px-to-rem(10px);
+  }
+  @media screen and (min-width: px-to-rem(571px)) and (max-width: px-to-rem(1000px)) {
+    padding: px-to-rem(15px) px-to-rem(40px) px-to-rem(15px) px-to-rem(40px);
+    margin-top: px-to-rem(80px);
     margin-bottom: px-to-rem(70px);
     font-size: px-to-rem(10px);
   }
@@ -356,12 +397,17 @@
 }
 
 .slider-nav {
-  @media screen and (max-width: px-to-rem(1000px)) {
+
+  @media screen and (max-width: px-to-rem(570px)) {
+    @include flex(center, space-between);
+    margin-top: px-to-rem(15px);
+    width: 100%;
+  }
+  @media screen and (min-width: px-to-rem(571px)) and (max-width: px-to-rem(1000px)) {
     @include flex(center, space-between);
     margin-top: px-to-rem(30px);
     width: 100%;
   }
-
   @media screen and (min-width: px-to-rem(1001px)) and (max-width: px-to-rem(1920px)) {
     display: none;
   }
@@ -373,6 +419,11 @@
     cursor: pointer;
     font-size: px-to-rem(20px);
     padding: 10px 20px 10px 20px;
+    @media screen and (max-width: px-to-rem(570px)) {
+      font-size: px-to-rem(15px);
+      padding: 5px 10px 5px 10px;
+    }
+
 
     &::before {
       content: "<";
