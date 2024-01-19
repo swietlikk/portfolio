@@ -13,7 +13,7 @@ function Section4() {
                 <div className="box__contact">
                     <div>
                         <div className="box__contact__content">
-                            <img src="../../../src/images/email.png" alt="" className="contact__img" />
+                            <a className="contact__img email__img"></a>
                             <h2 className="contact__title">E-mail</h2>
                         </div>
                     <div className="box__contact__text">
@@ -23,7 +23,7 @@ function Section4() {
 
                     <div>
                         <div className="box__contact__content">
-                            <img src="../../../src/images/telephone.png" alt="" className="contact__img" />
+                            <a className="contact__img telephone__img"></a>
                             <h2 className="contact__title">Telephone number</h2>
                         </div>
                         <div className="box__contact__text">
@@ -33,13 +33,13 @@ function Section4() {
 
                     <div>
                         <div className="box__contact__content">
-                            <img src="../../../src/images/share.png" alt="" className="contact__img" />
+                            <a className="contact__img media__img"></a>
                             <h2 className="contact__title">Social media</h2>
                         </div>
                         <div className="box__contact__text">
-                            <img src="../../../src/images/linkedin.png" alt="" className="socials__img" />
-                            <img src="../../../src/images/github.png" alt="" className="socials__img" />
-                            <img src="../../../src/images/instagram.png" alt="" className="socials__img" />
+                            <a target="_blank" href="https://www.linkedin.com/in/adam-%C5%9Bwietlicki-123777294/" alt="" className="socials__img"> </a>
+                            <a  target="_blank" href="https://github.com/swietlikk" alt="" className="socials__img"> </a>
+                            <a  target="_blank" href="https://github.com/swietlikk" alt="" className="socials__img"> </a>
                         </div>
                     </div>
                 </div>

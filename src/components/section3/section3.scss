@@ -1,7 +1,7 @@
-@import "../../helpers/functions";
-@import "../../helpers/mixins";
-@import "../../typography/variables";
-@import "../../typography/media_queries";
+@import "../../helpers/functions.scss";
+@import "../../helpers/mixins.scss";
+@import "../../typography/variables.scss";
+@import "../../typography/media_queries.scss";
 
 
 
@@ -298,6 +298,7 @@
   color: white;
   background-color: #74A5B4;
   border: none;
+  text-decoration: none;
 
   @media screen and (max-width: px-to-rem(570px)) {
     margin-top: px-to-rem(-5px);

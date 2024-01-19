@@ -1,7 +1,7 @@
-@import "../../helpers/functions";
-@import "../../helpers/mixins";
-@import "../../typography/variables";
-@import "../../typography/media_queries";
+@import "../../helpers/functions.scss";
+@import "../../helpers/mixins.scss";
+@import "../../typography/variables.scss";
+@import "../../typography/media_queries.scss";
 
 
 .background-color {
@@ -131,6 +131,7 @@
     margin-top: px-to-rem(50px);
     margin-bottom: 0;
     border: solid px-to-rem(1px) #74A5B4;
+    cursor: pointer;
 
     @media screen and (max-width: px-to-rem(520px)) {
       padding: px-to-rem(10px) px-to-rem(35px) px-to-rem(10px) px-to-rem(35px);
@@ -172,6 +173,7 @@
     transition: all 200ms ease-in-out;
     font-weight: 700;
     position: relative;
+    cursor: pointer;
     @media screen and (max-width: px-to-rem(520px)) {
       display: none;
     }
@@ -180,7 +182,7 @@
     }
   }
   &__item:hover {
-    color: black;
+    color: #2A2A2A;
   }
 
 }
@@ -232,44 +234,48 @@
   }
 
   @media screen and (min-width: px-to-rem(521px)) and (max-width: px-to-rem(800px)) {
-
+    margin-left: px-to-rem(-80px);
+  }
+  @media screen and (min-width: px-to-rem(705px)) and (max-width: px-to-rem(800px)) {
+    margin-left: px-to-rem(-70px);
+  }
+  @media screen and (min-width: px-to-rem(1180px)) and (max-width: px-to-rem(1200px)) {
+    margin-left: px-to-rem(-85px);
   }
 }
 
 .image__img {
   margin-left: px-to-rem(420px);
   z-index: 42;
-  margin-top: px-to-rem(-376px);
-  max-height: px-to-rem(826px);
-  max-width: px-to-rem(826px);
+  margin-top: px-to-rem(-366px);
+  height: px-to-rem(623px);
+  width: px-to-rem(826px);
+  background-image: url("../../images/photo-of-me.png");
 
   @media screen and (max-width: px-to-rem(520px)) {
-    max-height: px-to-rem(313px);
+    max-height: px-to-rem(236px);
     max-width: px-to-rem(313px);
     margin-left: px-to-rem(140px);
-    margin-top: px-to-rem(-117px);
+    margin-top: px-to-rem(-112.4px);
+    background-size: px-to-rem(313px) px-to-rem(236px);
   }
 
   @media screen and (min-width: px-to-rem(521px)) and (max-width: px-to-rem(1180px)) {
-    max-height: px-to-rem(613px);
+    max-height: px-to-rem(464px);
     max-width: px-to-rem(613px);
     margin-left: px-to-rem(260px);
-    margin-top: px-to-rem(-136px);
+    margin-top: px-to-rem(-130px);
+    background-size: px-to-rem(613px) px-to-rem(464px);
   }
 
   @media screen and (min-width: px-to-rem(521px)) and (max-width: px-to-rem(800px)) {
     margin-left: px-to-rem(170px);
-    max-height: px-to-rem(413px);
+    max-height: px-to-rem(311.5px);
     max-width: px-to-rem(413px);
-    margin-top: px-to-rem(18px);
+    margin-top: px-to-rem(-97px);
+    background-size: px-to-rem(413px) px-to-rem(311.5px);
   }
 
-  @media screen and (max-width: px-to-rem(800px)) and (min-width: px-to-rem(521px)) {
-    margin-left: px-to-rem(170px);
-    max-height: px-to-rem(413px);
-    max-width: px-to-rem(413px);
-    margin-top: px-to-rem(-102px);
-  }
 }
 
 

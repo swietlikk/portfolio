@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import './Section1.scss';
 
 function Section1() {
@@ -30,21 +31,27 @@ function Section1() {
                         <label htmlFor="hamburgerCheckbox" className="hamburger__icon"></label>
                     </div>
                     <nav className={`navigation ${isNavVisible ? 'visible' : ''}`}>
-                        <a href="" className="navigation__item navigation__item--active">
+                        <Link to="headline item__hdl" spy={true} smooth={true} offset={-80} duration={500} className="navigation__item navigation__item--active">
                             <span className="navigation__highlight">ABOUT ME</span>
-                        </a>
-                        <a href="" className="navigation__item">
+                        </Link>
+                        <Link to="projects__hdl__text" spy={true} smooth={true} offset={-80} duration={500} className="navigation__item">
                             <span className="navigation__highlight">PROJECTS</span>
-                        </a>
-                        <a href="" className="navigation__item">
+                        </Link>
+                        <Link to="contact__hdl__text" spy={true} smooth={true} offset={-80} duration={500} className="navigation__item">
                             <span className="navigation__highlight">CONTACT</span>
-                        </a>
+                        </Link>
                     </nav>
                     {isNavVisible && (
                         <div className="hamburger__elements">
-                            <div className="hamburger__element">About Me</div>
-                            <div className="hamburger__element">Projects</div>
-                            <div className="hamburger__element">Contact</div>
+                            <Link to="headline item__hdl" spy={true} smooth={true} offset={-80} duration={500} className="hamburger__element">
+                                About Me
+                            </Link>
+                            <Link to="projects__hdl__text" spy={true} smooth={true} offset={-80} duration={500} className="hamburger__element">
+                                Projects
+                            </Link>
+                            <Link to="contact__hdl__text" spy={true} smooth={true} offset={-80} duration={500} className="hamburger__element">
+                                Contact
+                            </Link>
                         </div>
                     )}
                 </div>
@@ -54,11 +61,13 @@ function Section1() {
                 <h2 className="intro__hdl">Hello</h2>
                 <h1 className="intro__name">I'm Adam</h1>
                 <p className="intro__dsc">FRONT END DEVELOPER</p>
-                <a href="" className="intro__btn btn">HIRE ME</a>
+                <Link to="contact__hdl__text" spy={true} smooth={true} offset={-80} duration={500} className="intro__btn btn">
+                    HIRE ME
+                </Link>
             </div>
 
             <div className="image">
-                <img src="../../../src/images/photo-of-me.png" alt="" className="image__img" />
+                <div className="image__img"></div>
             </div>
         </section>
     );

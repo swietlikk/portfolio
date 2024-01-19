@@ -63,7 +63,7 @@ function Section3() {
                         <div className="content">
                             <h2 className="title">Todo app</h2>
                             <p className="copy">Todo_app typically refers to a to-do list application, which is a common project for learning and practicing web development. In such an application, users can add, edit, and remove tasks from a list.</p>
-                            <button className="btn__card">MORE</button>
+                            <a className="btn__card" target="_blank" href="https://github.com/swietlikk">MORE</a>
                         </div>
                     </div>
 
@@ -71,7 +71,7 @@ function Section3() {
                         <div className="content">
                             <h2 className="title">Plan your day</h2>
                             <p className="copy">This app is a simple task management application developed using React. It provides basic functionality for adding, editing, and deleting tasks. Additionally, it offers analyzing the time spent on different task.</p>
-                            <button className="btn__card">MORE</button>
+                            <a className="btn__card" target="_blank" href="https://github.com/swietlikk">MORE</a>
                         </div>
                     </div>
 
@@ -79,7 +79,7 @@ function Section3() {
                         <div className="content">
                             <h2 className="title">Bestshop RWD</h2>
                             <p className="copy">BestShop RWD is a website project designed for various devices, including computers and mobile phones. The project was developed as part of learning and practical experience in front-end development.</p>
-                            <button className="btn__card">MORE</button>
+                            <a className="btn__card" target="_blank" href="https://github.com/swietlikk">MORE</a>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@ function Section3() {
         <ul className="slider-dots"></ul>
         <span className="arrow-next"></span>
             </span>
-                    <a className="btn card__btn" href="">
+                    <a className="btn card__btn" target="_blank" href="https://github.com/swietlikk">
                         MORE
                     </a>
                 </div>

@@ -1,5 +1,5 @@
 @use "sass:math";
-@import "../typography/variables";
+@import "../typography/variables.scss";
 
 @function px-to-rem($px) {
   $result: math.div($px, $base-font-size) * 1rem;

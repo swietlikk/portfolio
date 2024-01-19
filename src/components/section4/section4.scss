@@ -1,7 +1,7 @@
-@import "../../helpers/functions";
-@import "../../helpers/mixins";
-@import "../../typography/variables";
-@import "../../typography/media_queries";
+@import "../../helpers/functions.scss";
+@import "../../helpers/mixins.scss";
+@import "../../typography/variables.scss";
+@import "../../typography/media_queries.scss";
 
 .contact {
   @include flex(flex-start, center, column);
@@ -124,21 +124,27 @@
   width: px-to-rem(50px);
   height: px-to-rem(50px);
   margin-right: px-to-rem(30px);
+  background-size: px-to-rem(50px) px-to-rem(50px);
+
+
   @media screen and (max-width: px-to-rem(570px)) {
     width: px-to-rem(25px);
     height: px-to-rem(25px);
     margin-right: px-to-rem(7px);
+    background-size: px-to-rem(25px) px-to-rem(25px);
   }
 
   @media screen and (min-width: px-to-rem(571px)) and (max-width: px-to-rem(1000px)) {
     width: px-to-rem(35px);
     height: px-to-rem(35px);
     margin-right: px-to-rem(10px);
+    background-size: px-to-rem(35px) px-to-rem(35px);
   }
   @media screen and (min-width: px-to-rem(1001px)) and (max-width: px-to-rem(1250px)) {
     width: px-to-rem(35px);
     height: px-to-rem(35px);
     margin-right: px-to-rem(10px);
+    background-size: px-to-rem(35px) px-to-rem(35px);
   }
 }
 
@@ -185,23 +191,53 @@
   height: px-to-rem(45px);
   margin-inline: px-to-rem(10px);
   margin-top: px-to-rem(25px);
+  cursor: pointer;
+  background-size: px-to-rem(45px) px-to-rem(45px);
+
+  &:nth-child(1){
+    background-image: url("../../images/linkedin.png");
+  }
+
+  &:nth-child(2){
+    background-image: url("../../images/github.png");
+  }
+
+  &:nth-child(3){
+    background-image: url("../../images/instagram.png");
+  }
+
   @media screen and (max-width: px-to-rem(570px)) {
-    width: px-to-rem(25px);
-    height: px-to-rem(25px);
+    background-size: px-to-rem(25px) px-to-rem(25px);
     margin-inline: px-to-rem(5px);
     margin-top: px-to-rem(10px);
+    width: px-to-rem(25px);
+    height: px-to-rem(25px);
   }
 
   @media screen and (min-width: px-to-rem(571px)) and (max-width: px-to-rem(1000px)) {
-    width: px-to-rem(35px);
-    height: px-to-rem(35px);
+    background-size: px-to-rem(35px) px-to-rem(35px);
     margin-inline: px-to-rem(5px);
     margin-top: px-to-rem(15px);
+    width: px-to-rem(35px);
+    height: px-to-rem(35px);
   }
   @media screen and (min-width: px-to-rem(1001px)) and (max-width: px-to-rem(1250px)) {
-    width: px-to-rem(35px);
-    height: px-to-rem(35px);
+    background-size: px-to-rem(35px) px-to-rem(35px);
     margin-inline: px-to-rem(5px);
     margin-top: px-to-rem(15px);
+    width: px-to-rem(35px);
+    height: px-to-rem(35px);
   }
+}
+
+.email__img{
+  background-image: url("../../images/email.png");
+}
+
+.telephone__img{
+  background-image: url("../../images/telephone.png");
+}
+
+.media__img{
+  background-image: url("../../images/share.png");
 }

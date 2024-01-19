@@ -1,7 +1,7 @@
-@import "../../helpers/functions";
-@import "../../helpers/mixins";
-@import "../../typography/variables";
-@import "../../typography/media_queries";
+@import "../../helpers/functions.scss";
+@import "../../helpers/mixins.scss";
+@import "../../typography/variables.scss";
+@import "../../typography/media_queries.scss";
 
 .about__section {
   height: px-to-rem(700px);
@@ -136,6 +136,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   transition: all 200ms ease-in-out;
+  cursor: pointer;
 
   @media screen and (max-width: px-to-rem(1250px)) {
     padding: px-to-rem(15px) px-to-rem(40px) px-to-rem(15px) px-to-rem(40px);

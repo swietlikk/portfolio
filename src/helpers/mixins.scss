@@ -1,4 +1,4 @@
-@import "../typography/variables";
+@import "../typography/variables.scss";
 
 @mixin flex($horizontal: flex-start, $vertical: flex-start, $wrap: nowrap){
   display: flex;

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Section2.scss';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 function Section2() {
     return (
@@ -27,7 +28,9 @@ function Section2() {
                         Let's build something extraordinary together!
                         </p>
                         <div className="btn__container">
-                    <a className="btn about__btn" href="">HIRE ME</a>
+                            <Link to="contact__hdl__text" spy={true} smooth={true} offset={-80} duration={500} className="btn about__btn">
+                                HIRE ME
+                            </Link>
                     <a className="btn download__btn" href="../../files/adamos.swietlicki@gmail.com%20(1).pdf" download="AdamŚwietlicki_CV">DOWNLOAD CV</a>
                     </div>
                         <div className="frame__container__mobile">
