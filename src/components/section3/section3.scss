@@ -216,7 +216,7 @@
   }
 
   &:nth-child(1):before {
-    background-image: url('../../images/sc1.jpg');
+    background-image: url('../../images/weather.jpg');
   }
 
   &:nth-child(2):before {
@@ -226,6 +226,7 @@
   &:nth-child(3):before {
     background-image: url('../../images/sc3.jpg');
   }
+
 
 }
 
@@ -239,18 +240,21 @@
   transition: transform var(--d) var(--e);
   z-index: 1;
 
+
+
   > * + * {
     margin-top: px-to-rem(16px);
   }
 
   @media screen and (max-width: px-to-rem(570px)) {
-    padding: px-to-rem(30px) 0 0 0;
+    padding: px-to-rem(30px) 0 px-to-rem(20px) 0;
   }
   @media screen and (min-width: px-to-rem(571px)) and (max-width: px-to-rem(999px)) {
     padding: px-to-rem(20px) 0 0 0;
   }
 
 }
+
 
 .title {
   font-size: px-to-rem(23px);
